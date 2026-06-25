@@ -5,25 +5,35 @@ function App() {
     "Embedded Systems",
     "Embedded C",
     "Java Programming",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "Git & GitHub",
     "Problem Solving",
-    "Posters Making",
   ];
 
   const projects = [
     {
+      title: "Student Attendance Management System",
+      description:
+        "Developed a full-stack web application to store and manage daily student attendance records. Faculty can add, update, view and maintain attendance details efficiently. Built using Node.js, Express.js, MongoDB, JavaScript, HTML and CSS.",
+      technologies: "Node.js, Express.js, MongoDB, JavaScript, HTML, CSS",
+      link: "https://attendencesystem-1-kec-frontend1.onrender.com",
+    },
+    {
       title: "Embedded Systems Project",
       description:
         "Developed embedded applications using Arduino and PIC microcontrollers for real-time hardware control.",
+      technologies: "Arduino, PIC Microcontroller, Embedded C",
     },
     {
       title: "Microcontroller Based System",
       description:
         "Worked on hardware and software integration projects involving sensors and automation.",
-    },
-    {
-      title: "Technical Research & Presentation",
-      description:
-        "Presented technical papers and posters in various college-level competitions.",
+      technologies: "Embedded C, Sensors, Microcontrollers",
     },
   ];
 
@@ -47,13 +57,13 @@ function App() {
         <div className="hero-content">
           <h3>Hello, I'm</h3>
           <h1>DHANAM P</h1>
-          <h2>Embedded Systems Developer</h2>
+          <h2>Embedded Systems & Full Stack Developer</h2>
 
           <p>
             Motivated and detail-oriented Electronics and Communication
             Engineering graduate with strong knowledge in Embedded Systems,
-            Microcontrollers, Arduino, PIC Microcontrollers, Embedded C and Java
-            Programming.
+            Microcontrollers, Node.js, Express.js, MongoDB, JavaScript and
+            Full-Stack Web Development.
           </p>
 
           <div className="hero-buttons">
@@ -75,8 +85,8 @@ function App() {
         <p>
           I am an Electronics and Communication Engineering graduate from Kongu
           Engineering College. I am passionate about Embedded Systems,
-          Microcontrollers, and developing innovative solutions through
-          programming and hardware integration.
+          Microcontrollers, Full-Stack Web Development and creating innovative
+          solutions using both software and hardware technologies.
         </p>
       </section>
 
@@ -93,7 +103,7 @@ function App() {
         <div className="edu-card">
           <h3>HSC</h3>
           <p>Government Higher Secondary School, Panayampalli</p>
-          <p>516 / 600</p>
+          <p>512 / 600</p>
         </div>
 
         <div className="edu-card">
@@ -127,7 +137,20 @@ function App() {
 
               <p>{project.description}</p>
 
-              <button>View Details</button>
+              <p>
+                <strong>Technologies:</strong> {project.technologies}
+              </p>
+
+              {project.link && (
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="project-btn"
+                >
+                  View Project
+                </a>
+              )}
             </div>
           ))}
         </div>
@@ -182,19 +205,11 @@ function App() {
         </div>
       </section>
 
-      {/* HOBBIES */}
-      <section className="hobbies">
-        <h2>Hobbies & Interests</h2>
 
-        <ul>
-          <li>Drawing</li>
-          <li>Learning New Technologies</li>
-        </ul>
-      </section>
 
       {/* FOOTER */}
       <footer>
-        <p>© 2026 DHANAM P | Embedded Systems Developer</p>
+        <p>© 2026 DHANAM P | Embedded Systems & Full Stack Developer</p>
       </footer>
     </>
   );
