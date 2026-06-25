@@ -2,16 +2,9 @@ import "./App.css";
 
 function App() {
   const skills = [
-    "Embedded Systems",
     "Embedded C",
     "Java Programming",
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "Node.js",
-    "Express.js",
-    "MongoDB",
-    "Git & GitHub",
+    "Full stack developer",
     "Problem Solving",
   ];
 
@@ -24,16 +17,17 @@ function App() {
       link: "https://attendencesystem-1-kec-frontend1.onrender.com",
     },
     {
-      title: "Embedded Systems Project",
-      description:
-        "Developed embedded applications using Arduino and PIC microcontrollers for real-time hardware control.",
-      technologies: "Arduino, PIC Microcontroller, Embedded C",
-    },
-    {
       title: "Microcontroller Based System",
       description:
-        "Worked on hardware and software integration projects involving sensors and automation.",
-      technologies: "Embedded C, Sensors, Microcontrollers",
+        "Developed an embedded system project Industrial Power Monitoring and Auto Cutoff System by using a microcontroller to monitor industrial power parameters and automatically disconnect the power supply during abnormal conditions to protect equipment and ensure safety.",
+      technologies: "Microcontroller, Embedded C, Sensors",
+    },
+    {
+      title: "IOT Based System",
+      description:
+        "Developed a Water Leakage Detection and pH Monitoring System using a microcontroller to detect water leaks and continuously monitor water quality through pH measurement.",
+      technologies:
+        "Microcontroller, C progamming",
     },
   ];
 
@@ -45,11 +39,12 @@ function App() {
   ];
 
   const certifications = [
-    "Embedded Systems Certification",
     "Embedded Programming & Microcontrollers Certification",
     "NASSCOM Certification",
+    "NPTEL: Introduction to Semiconductor Devices",
+    "Non-Formal Course:1.Building and Industrial Automation",
+    "                  2.Embedded Systems Using ESP32",
   ];
-
   return (
     <>
       {/* HERO SECTION */}
@@ -60,9 +55,8 @@ function App() {
           <h2>Embedded Systems & Full Stack Developer</h2>
 
           <p>
-            Motivated and detail-oriented Electronics and Communication
-            Engineering graduate with strong knowledge in Embedded Systems,
-            Microcontrollers, Node.js, Express.js, MongoDB, JavaScript and
+            Motivated and detail-oriented Electrical and Electronics graduate with knowledge in Embedded Systems,
+            Microcontrollers,Program solving  and
             Full-Stack Web Development.
           </p>
 
@@ -83,7 +77,7 @@ function App() {
         <h2>About Me</h2>
 
         <p>
-          I am an Electronics and Communication Engineering graduate from Kongu
+          I am an Electrical and Electronics graduate from Kongu
           Engineering College. I am passionate about Embedded Systems,
           Microcontrollers, Full-Stack Web Development and creating innovative
           solutions using both software and hardware technologies.
